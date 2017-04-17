@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+  </style>
+  <title><%= htmlWebpackPlugin.options.entryName %></title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="//unpkg.com/vue"></script>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks[htmlWebpackPlugin.options.entryName].entry %>"></script>
+</body>
+</html>
